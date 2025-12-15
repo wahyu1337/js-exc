@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const repeatString = function(str, num) {
     let newStr = '';
     for (let i = 0; i < num; i++){
@@ -8,6 +9,10 @@ const repeatString = function(str, num) {
         newStr = 'ERROR';
     }
     return newStr;
+=======
+const repeatString = function() {
+
+>>>>>>> upstream/main
 =======
 const repeatString = function() {
 

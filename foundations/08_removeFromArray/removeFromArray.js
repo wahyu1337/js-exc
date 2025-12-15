@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const removeFromArray = function(arr, ...item){
     const newArr = [];
     for (let i = 0; i < arr.length; i++){
@@ -6,6 +7,9 @@ const removeFromArray = function(arr, ...item){
             newArr.push(arr[i]);
         }
     }  return newArr;
+=======
+const removeFromArray = function() {
+>>>>>>> upstream/main
 =======
 const removeFromArray = function() {
 >>>>>>> upstream/main

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const sumAll = function(arg1, arg2) {
     let arr = [];
     
@@ -22,6 +23,10 @@ const sumAll = function(arg1, arg2) {
             arr.push(i);
         }
     } return arr.reduce((sum, currentVal) => sum + currentVal);
+=======
+const sumAll = function() {
+
+>>>>>>> upstream/main
 =======
 const sumAll = function() {
 
