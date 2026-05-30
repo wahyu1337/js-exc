@@ -4,19 +4,19 @@ describe('factorial', () => {
   test('4th factorial number is 24', () => {
     expect(factorial(4)).toBe(24);
   });
-  test.skip('6th factorial number is 720', () => {
+  test('6th factorial number is 720', () => {
     expect(factorial(6)).toBe(720);
   });
-  test.skip('10th factorial number is 3628800', () => {
+  test('10th factorial number is 3628800', () => {
     expect(factorial(10)).toBe(3628800);
   });
-  test.skip('15th factorial number is 1307674368000', () => {
+  test('15th factorial number is 1307674368000', () => {
     expect(factorial(15)).toBe(1307674368000);
   });
-  test.skip('25th factorial number is 1.5511210043330986e+25', () => {
+  test('25th factorial number is 1.5511210043330986e+25', () => {
     expect(factorial(25)).toBe(1.5511210043330986e+25);
   });
-  test.skip('0th factorial number is 1', () => {
+  test('0th factorial number is 1', () => {
     expect(factorial(0)).toBe(1);
   });
   test.skip("doesn't accept negatives", () => {
