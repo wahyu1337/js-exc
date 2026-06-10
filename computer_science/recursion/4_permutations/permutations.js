@@ -1,17 +1,24 @@
-const permutations = function(targetVal) {
-    let arr = [];
-    let holder = [];
-    // base case
-    if (targetVal.length === 0) {
-        return [arr];
+const permutations = function(arr) {
+    const result = [];
+    let curElement = [];
+
+    // base case if 0
+    if (arr.length === 0){
+        return [[]];
     }
 
-    // recursive progress
-    for (let i = 0; i < targetVal.length; i++) {
-        arr.push(targetVal);
+    // loop each array
+    for (let i = 0; i < arr.length; i++) {
+        // current element
+        curElement.push(arr[i])
+        // give remaining element into var
+        const remainingElement = curElement.toSpliced(i, 1);
+
+        // sub of remaining element
+        result.push(remainingElement);
     }
 
-    return arr;
+    return result;
 };
   
 // Do not edit below this line
