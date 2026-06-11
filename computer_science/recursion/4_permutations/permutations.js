@@ -1,23 +1,30 @@
 const permutations = function(arr) {
     const result = [];
-    let curElement = [];
 
-    // base case if 0
-    if (arr.length === 0){
+    // guard case if no element
+    if (arr.length === 0) {
         return [[]];
     }
 
-    // loop each array
-    for (let i = 0; i < arr.length; i++) {
-        // current element
-        curElement.push(arr[i])
-        // give remaining element into var
-        const remainingElement = curElement.toSpliced(i, 1);
+    function permute(currentArr, memo = []) {
+        // base case if no element to process
+        if (currentArr.length === 0) {
+            result.push(memo);
+            return;
+        }
 
-        // sub of remaining element
-        result.push(remainingElement);
+        for (let i = 0; i < currentArr.length; i++) {
+            // remove element at index i without mutating the array
+            const reamining = currentArr.toSpliced(i, 1);
+
+            // Add the selected element to our building permutation path
+            const nextMemo = memo.concat(currentArr[i]);
+
+            // recursive
+            permute(reamining, nextMemo);
+        }
     }
-
+    permute(arr);
     return result;
 };
   
